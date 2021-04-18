@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/pubIds/ark/locale/es_ES/locale.xml
+  *
+  * Copyright (c) 2021 Yasiel Pérez Vera
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  * Localization information: https://pkp.sfu.ca/wiki/index.php?title=OJS:_Spanish_(es_ES)
+  * Localization strings.
+  -->
+
+<locale name="es_ES" full_name="Español (España)">
+	<message key="plugins.pubIds.ark.displayName">ARK</message>
+	<message key="plugins.pubIds.ark.description">Este módulo activa la asiganción de ARK (Archival Resource Key) de los números, artículos y galeradas en OJS.</message>
+
+	<!-- settings form -->
+	<message key="plugins.pubIds.ark.manager.settings.description">Configura el módulo ARK para poder administrar y usar ARKs en OJS:</message>
+
+	<message key="plugins.pubIds.ark.manager.settings.arkObjects">Contenido de la revista</message>
+	<message key="plugins.pubIds.ark.manager.settings.arkObjectsRequired">Escoja los objetos a los que asignar ARKs.</message>
+	<message key="plugins.pubIds.ark.manager.settings.explainARKs">Escoja los objetos publicados al los que asignar ARK (Archival Resource Key):</message>
+	<message key="plugins.pubIds.ark.manager.settings.enableIssueARK">Números</message>
+	<message key="plugins.pubIds.ark.manager.settings.enableSubmissionARK">Artículos</message>
+	<message key="plugins.pubIds.ark.manager.settings.enableRepresentationARK">Galeradas</message>
+
+	<message key="plugins.pubIds.ark.manager.settings.arkPrefix">Prefijo ARK</message>
+	<message key="plugins.pubIds.ark.manager.settings.arkPrefix.description"><![CDATA[El prefijo ARK es la parte no cambiante del ARK (p.ej. "ark:/00000").]]></message>
+	<message key="plugins.pubIds.ark.manager.settings.form.arkPrefixPattern"><![CDATA[El patrón del prefijo ARK debe seguir el formato "ark:/"&lt;NAAN&gt;.]]></message>
+
+	<message key="plugins.pubIds.ark.manager.settings.arkSuffix">Sufijo ARK</message>
+	<message key="plugins.pubIds.ark.manager.settings.arkSuffix.description">El sufijo ARK pude tomar cualquier forma, pero debe ser único entre todos los objetos publicados bajo un mismo prefijo ARK:</message>
+	<message key="plugins.pubIds.ark.manager.settings.arkSuffixPattern">Indique el patrón que desea emplear para generar sufijos ARK. Utilice %j para las iniciales de la revista, %v para el número de volúmen, %i para el número de número, %s para el ID del número, %Y para el año, %a para el ID de artículo, %g para el ID de galerada, %f para el ID de fichero, %p para el número de página y %x para el "Identificador personalizado"</message>
+	<message key="plugins.pubIds.ark.manager.settings.arkSuffixPattern.example">Por ejemplo, vol%viss%ipp%p crearía el sufijo ARK "vol3iss2pp230".</message>
+	<message key="plugins.pubIds.ark.manager.settings.arkSuffixPattern.issues">para números</message>
+	<message key="plugins.pubIds.ark.manager.settings.arkSuffixPattern.submissions">para artículos</message>
+	<message key="plugins.pubIds.ark.manager.settings.arkSuffixPattern.representations">para galeradas</message>
+	<message key="plugins.pubIds.ark.manager.settings.arkIssueSuffixPatternRequired">Introduzca el patrón de sufijo ARK para los números.</message>
+	<message key="plugins.pubIds.ark.manager.settings.arkSubmissionSuffixPatternRequired">Introduzca el patrón de sufijo ARK para los artículos.</message>
+	<message key="plugins.pubIds.ark.manager.settings.arkRepresentationSuffixPatternRequired">Introduzca el patrón de sufijo ARK para las galeradas.</message>
+	<message key="plugins.pubIds.ark.manager.settings.arkSuffixDefault">Usar los patrones por defecto.</message>
+	<message key="plugins.pubIds.ark.manager.settings.arkSuffixDefault.description"><![CDATA[%j.v%vi%i para números<br />%j.v%vi%i.%a para artículos<br />%j.v%vi%i.%a.g%g para galeradas.]]></message>
+	<message key="plugins.pubIds.ark.manager.settings.arkSuffixCustomIdentifier">Introduzca un sufijo ARK individual para cada item publicado. Encontrará un campo adicional para el ARK en la pàgina de metadatos de cada item.</message>
+	<message key="plugins.pubIds.ark.manager.settings.arkResolver">URL de resolución</message>
+	<message key="plugins.pubIds.ark.manager.settings.arkResolver.description">(p.ej. https://n2t.net/)</message>
+	<message key="plugins.pubIds.ark.manager.settings.form.arkResolverRequired">Introduzca la URL de resolución.</message>
+
+	<message key="plugins.pubIds.ark.manager.settings.arkReassign">Reasignar ARKs</message>
+	<message key="plugins.pubIds.ark.manager.settings.arkReassign.description">Si cambia su configuración ARK, los ARKs ya asignados no se verán afectadas. Cuando guarde la configuración ARK, podrá usar este botón para limpiar los ARKs existentes, de forma que la nueva configuración tenga efecto para todos los objetos exitentes.</message>
+	<message key="plugins.pubIds.ark.manager.settings.arkReassign.confirm">¿Está seguro/a de que querer borrar todos los ARKs existentes?</message>
+
+	<!-- metadata form -->
+	<message key="plugins.pubIds.ark.editor.ark">ARK</message>
+	<message key="plugins.pubIds.ark.editor.arkObjectTypeIssue">número</message>
+	<message key="plugins.pubIds.ark.editor.arkObjectTypeSubmission">artículo</message>
+	<message key="plugins.pubIds.ark.editor.arkObjectTypeRepresentation">galerada</message>
+	<message key="plugins.pubIds.ark.editor.customSuffixMissing">No se puede asignar un ARK porque falta el sufijo personalizado.</message>
+	<message key="plugins.pubIds.ark.editor.patternNotResolved">No se puede asignar un ARK porque contiene patrones sin resolver.</message>
+	<message key="plugins.pubIds.ark.editor.canBeAssigned">Lo que se muestra es una vista previa del ARK. Seleccione la casilla de verificación y guarde el formulario para asignar el ARK.</message>
+	<message key="plugins.pubIds.ark.editor.assigned">El ARK asignado a este {$pubObjectType}.</message>
+	<message key="plugins.pubIds.ark.editor.arkSuffixCustomIdentifierNotUnique">El sufijo ARK dado ya está en uso para otro elemento publicado. Ingrese un sufijo ARK único para cada elemento.</message>
+	<message key="plugins.pubIds.ark.editor.clearObjectsARK">Limpiar ARK</message>
+	<message key="plugins.pubIds.ark.editor.clearObjectsARK.confirm">¿Está seguro/a de querer borrar todos los ARK existentes?</message>
+
+	<message key="plugins.pubIds.ark.editor.clearIssueObjectsARK">Limpiar ARKs de los Objetos del Número</message>
+	<message key="plugins.pubIds.ark.editor.clearIssueObjectsARK.confirm">¿Está seguro/a de querer borrar todos los ARKs de los objetos del número?</message>
+	<message key="plugins.pubIds.ark.editor.clearIssueObjectsARK.description">Use la siguiente opción para limpiar los ARKs de todos los objetos (artículos y galerias) actualmente programados para este número.</message>
+	<!-- assignment form -->
+	<message key="plugins.pubIds.ark.editor.assignARK">Asignar el ARK {$pubId} a este {$pubObjectType}</message>
+	<message key="plugins.pubIds.ark.editor.assignARK.emptySuffix">El ARK no se puede asignar porque falta el sufijo personalizado.</message>
+	<message key="plugins.pubIds.ark.editor.assignARK.pattern">El ARK {$pubId} no se puede asignar porque contiene patrones sin resolver.</message>
+	<message key="plugins.pubIds.ark.editor.assignARK.assigned">Se ha asignado el ARK {$pubId}.</message>
+
+</locale>

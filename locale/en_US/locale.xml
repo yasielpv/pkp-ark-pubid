@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/pubIds/ark/locale/en_US/locale.xml
+  *
+  * Copyright (c) 2021 Yasiel Pérez Vera
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  * Localization information: https://pkp.sfu.ca/wiki/index.php?title=Translating_OxS
+  * Localization strings.
+  -->
+
+<locale name="en_US" full_name="U.S. English">
+	<message key="plugins.pubIds.ark.displayName">ARK</message>
+	<message key="plugins.pubIds.ark.description">This plugin enables the assignment of the Archival Resource Key to the issues, articles and galleys in OJS.</message>
+
+	<!-- settings form -->
+	<message key="plugins.pubIds.ark.manager.settings.description">Please configure the ARK plugin to be able to manage and use ARKs in OJS:</message>
+
+	<message key="plugins.pubIds.ark.manager.settings.arkObjects">Journal Content</message>
+	<message key="plugins.pubIds.ark.manager.settings.arkObjectsRequired">Please choose the objects ARKs should be assigned to.</message>
+	<message key="plugins.pubIds.ark.manager.settings.explainARKs">Please select the publishing objects that will have Archival Resource Key (ARK) assigned:</message>
+	<message key="plugins.pubIds.ark.manager.settings.enableIssueARK">Issues</message>
+	<message key="plugins.pubIds.ark.manager.settings.enableSubmissionARK">Articles</message>
+	<message key="plugins.pubIds.ark.manager.settings.enableRepresentationARK">Galleys</message>
+
+	<message key="plugins.pubIds.ark.manager.settings.arkPrefix">ARK Prefix</message>
+	<message key="plugins.pubIds.ark.manager.settings.arkPrefix.description"><![CDATA[The ARK prefix is the fix, never changing part of the ARK (e.g. "ark:/00000").]]></message>
+	<message key="plugins.pubIds.ark.manager.settings.form.arkPrefixPattern"><![CDATA[The ARK prefix pattern must be in the form "ark:/"&lt;NAAN&gt;.]]></message>
+
+	<message key="plugins.pubIds.ark.manager.settings.arkSuffix">ARK Suffix</message>
+	<message key="plugins.pubIds.ark.manager.settings.arkSuffix.description">A ARK suffix can take any form, but must be unique among all publishing objects with the same ARK prefix assigned:</message>
+	<message key="plugins.pubIds.ark.manager.settings.arkSuffixPattern">Use the pattern entered below to generate ARK suffixes. Use %j for journal initials, %v for the volume number, %i for the issue number, %s para el ID del número, %Y for the year, %a for the OJS article ID, %g for the OJS galley ID, %f for the OJS file ID, %p for the page number and %x for "Custom Identifier".</message>
+	<message key="plugins.pubIds.ark.manager.settings.arkSuffixPattern.example">For example, vol%viss%ipp%p could create the ARK suffix "vol3iss2pp230".</message>
+	<message key="plugins.pubIds.ark.manager.settings.arkSuffixPattern.issues">for issues</message>
+	<message key="plugins.pubIds.ark.manager.settings.arkSuffixPattern.submissions">for articles</message>
+	<message key="plugins.pubIds.ark.manager.settings.arkSuffixPattern.representations">for galleys</message>
+	<message key="plugins.pubIds.ark.manager.settings.arkIssueSuffixPatternRequired">Please enter the ARK suffix pattern for issues.</message>
+	<message key="plugins.pubIds.ark.manager.settings.arkSubmissionSuffixPatternRequired">Please enter the ARK suffix pattern for articles.</message>
+	<message key="plugins.pubIds.ark.manager.settings.arkRepresentationSuffixPatternRequired">Please enter the ARK suffix pattern for galleys.</message>
+	<message key="plugins.pubIds.ark.manager.settings.arkSuffixDefault">Use default patterns.</message>
+	<message key="plugins.pubIds.ark.manager.settings.arkSuffixDefault.description"><![CDATA[%j.v%vi%i for issues<br />%j.v%vi%i.%a for articles<br />%j.v%vi%i.%a.g%g for galleys.]]></message>
+	<message key="plugins.pubIds.ark.manager.settings.arkSuffixCustomIdentifier">Enter an individual ARK suffix for each published item. You'll find an additional ARK input field on each item's metadata page.</message>
+	<message key="plugins.pubIds.ark.manager.settings.arkResolver">Resolver URL</message>
+	<message key="plugins.pubIds.ark.manager.settings.arkResolver.description">(e.g. https://n2t.net/)</message>
+	<message key="plugins.pubIds.ark.manager.settings.form.arkResolverRequired">Please enter the resolver URL.</message>
+
+	<message key="plugins.pubIds.ark.manager.settings.arkReassign">Reassign ARKs</message>
+	<message key="plugins.pubIds.ark.manager.settings.arkReassign.description">If you change your ARK configuration, ARKs that have already been assigned will not be affected. Once the ARK configuration is saved, use this button to clear all existing ARKs so that the new settings will take effect with existing objects.</message>
+	<message key="plugins.pubIds.ark.manager.settings.arkReassign.confirm">Are you sure you wish to delete all existing ARKs?</message>
+
+	<!-- metadata form -->
+	<message key="plugins.pubIds.ark.editor.ark">ARK</message>
+	<message key="plugins.pubIds.ark.editor.arkObjectTypeIssue">issue</message>
+	<message key="plugins.pubIds.ark.editor.arkObjectTypeSubmission">article</message>
+	<message key="plugins.pubIds.ark.editor.arkObjectTypeRepresentation">galley</message>
+	<message key="plugins.pubIds.ark.editor.customSuffixMissing">The ARK cannot be assigned because the custom suffix is missing.</message>
+	<message key="plugins.pubIds.ark.editor.patternNotResolved">The ARK cannot be assigned because it contains an unresolved pattern.</message>
+	<message key="plugins.pubIds.ark.editor.canBeAssigned">What you see is a preview of the ARK. Select the checkbox and save the form to assign the ARK.</message>
+	<message key="plugins.pubIds.ark.editor.assigned">The ARK is assigned to this {$pubObjectType}.</message>
+	<message key="plugins.pubIds.ark.editor.arkSuffixCustomIdentifierNotUnique">The given ARK suffix is already in use for another published item. Please enter a unique ARK suffix for each item.</message>
+	<message key="plugins.pubIds.ark.editor.clearObjectsARK">Clear ARK</message>
+	<message key="plugins.pubIds.ark.editor.clearObjectsARK.confirm">Are you sure you wish to delete the existing ARK?</message>
+	<message key="plugins.pubIds.ark.editor.clearIssueObjectsARK">Clear Issue Objects ARKs</message>
+	<message key="plugins.pubIds.ark.editor.clearIssueObjectsARK.confirm">Are you sure you wish to delete the existing issue objects ARKs?</message>
+	<message key="plugins.pubIds.ark.editor.clearIssueObjectsARK.description">Use the following option to clear ARKs of all objects (articles and galleys) currently scheduled for this issue.</message>
+
+	<!-- assignment form -->
+	<message key="plugins.pubIds.ark.editor.assignARK">Assign the ARK {$pubId} to this {$pubObjectType}</message>
+	<message key="plugins.pubIds.ark.editor.assignARK.emptySuffix">The ARK cannot be assigned because the custom suffix is missing.</message>
+	<message key="plugins.pubIds.ark.editor.assignARK.pattern">The ARK {$pubId} cannot be assigned because it contains an unresolved pattern.</message>
+	<message key="plugins.pubIds.ark.editor.assignARK.assigned">The ARK {$pubId} has been assigned.</message>
+
+</locale>
