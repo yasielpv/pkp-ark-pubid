@@ -61,15 +61,15 @@ class ARKSettingsForm extends Form {
 			return $form->getData('enableIssueARK') || $form->getData('enableSubmissionARK') || $form->getData('enableRepresentationARK');
 		}));
 		$this->addCheck(new FormValidatorRegExp($this, 'arkPrefix', 'required', 'plugins.pubIds.ark.manager.settings.form.arkPrefixPattern', '/^ark:\/[0-9]+$/'));
-		$this->addCheck(new FormValidatorCustom($this, 'arkIssueSuffixPattern', 'required', 'plugins.pubIds.ark.manager.settings.form.arkIssueSuffixPatternRequired', function($arkIssueSuffixPattern) use ($form) {
+		$this->addCheck(new FormValidatorCustom($this, 'arkIssueSuffixPattern', 'required', 'plugins.pubIds.ark.manager.settings.arkIssueSuffixPatternRequired', function($arkIssueSuffixPattern) use ($form) {
 			if ($form->getData('arkSuffix') == 'pattern' && $form->getData('enableIssueARK')) return $arkIssueSuffixPattern != '';
 			return true;
 		}));
-		$this->addCheck(new FormValidatorCustom($this, 'arkSubmissionSuffixPattern', 'required', 'plugins.pubIds.ark.manager.settings.form.arkSubmissionSuffixPatternRequired', function($arkSubmissionSuffixPattern) use ($form) {
+		$this->addCheck(new FormValidatorCustom($this, 'arkSubmissionSuffixPattern', 'required', 'plugins.pubIds.ark.manager.settings.arkSubmissionSuffixPatternRequired', function($arkSubmissionSuffixPattern) use ($form) {
 			if ($form->getData('arkSuffix') == 'pattern' && $form->getData('enableSubmissionARK')) return $arkSubmissionSuffixPattern != '';
 			return true;
 		}));
-		$this->addCheck(new FormValidatorCustom($this, 'arkRepresentationSuffixPattern', 'required', 'plugins.pubIds.ark.manager.settings.form.arkRepresentationSuffixPatternRequired', function($arkRepresentationSuffixPattern) use ($form) {
+		$this->addCheck(new FormValidatorCustom($this, 'arkRepresentationSuffixPattern', 'required', 'plugins.pubIds.ark.manager.settings.arkRepresentationSuffixPatternRequired', function($arkRepresentationSuffixPattern) use ($form) {
 			if ($form->getData('arkSuffix') == 'pattern' && $form->getData('enableRepresentationARK')) return $arkRepresentationSuffixPattern != '';
 			return true;
 		}));
