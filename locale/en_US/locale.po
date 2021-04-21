@@ -1,0 +1,198 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: locale.xml conversion\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-21 08:28-0500\n"
+"PO-Revision-Date: 2021-04-21 08:28-0500\n"
+"Last-Translator: \n"
+"Language-Team: English (USA)\n"
+"Language: en-US\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz\n"
+"X-Loco-Source-Locale: en-US\n"
+"X-Loco-Api-Version: 1.0.25 20210310-1"
+
+msgid "plugins.pubIds.ark.displayName"
+msgstr "ARK"
+
+msgid "plugins.pubIds.ark.description"
+msgstr ""
+"This plugin enables the assignment of the Archival Resource Key to the "
+"issues, articles and galleys in OJS."
+
+#. settings form
+msgid "plugins.pubIds.ark.manager.settings.description"
+msgstr ""
+"Please configure the ARK plugin to be able to manage and use ARKs in OJS:"
+
+msgid "plugins.pubIds.ark.manager.settings.arkObjects"
+msgstr "Journal Content"
+
+msgid "plugins.pubIds.ark.manager.settings.arkObjectsRequired"
+msgstr "Please choose the objects ARKs should be assigned to."
+
+msgid "plugins.pubIds.ark.manager.settings.explainARKs"
+msgstr ""
+"Please select the publishing objects that will have Archival Resource Key "
+"(ARK) assigned:"
+
+msgid "plugins.pubIds.ark.manager.settings.enableIssueARK"
+msgstr "Issues"
+
+msgid "plugins.pubIds.ark.manager.settings.enableSubmissionARK"
+msgstr "Articles"
+
+msgid "plugins.pubIds.ark.manager.settings.enableRepresentationARK"
+msgstr "Galleys"
+
+msgid "plugins.pubIds.ark.manager.settings.arkPrefix"
+msgstr "ARK Prefix"
+
+msgid "plugins.pubIds.ark.manager.settings.arkPrefix.description"
+msgstr ""
+"The ARK prefix is the fix, never changing part of the ARK (e.g. \"ark:"
+"/00000\")."
+
+msgid "plugins.pubIds.ark.manager.settings.form.arkPrefixPattern"
+msgstr "The ARK prefix pattern must be in the form \"ark:/\"&lt;NAAN&gt;."
+
+msgid "plugins.pubIds.ark.manager.settings.arkSuffix"
+msgstr "ARK Suffix"
+
+msgid "plugins.pubIds.ark.manager.settings.arkSuffix.description"
+msgstr ""
+"A ARK suffix can take any form, but must be unique among all publishing "
+"objects with the same ARK prefix assigned:"
+
+msgid "plugins.pubIds.ark.manager.settings.arkSuffixPattern"
+msgstr ""
+"Use the pattern entered below to generate ARK suffixes. Use %j for journal "
+"initials, %v for the volume number, %i for the issue number, %s para el ID "
+"del número, %Y for the year, %a for the OJS article ID, %g for the OJS "
+"galley ID, %f for the OJS file ID, %p for the page number and %x for "
+"\"Custom Identifier\"."
+
+msgid "plugins.pubIds.ark.manager.settings.arkSuffixPattern.example"
+msgstr ""
+"For example, vol%viss%ipp%p could create the ARK suffix \"vol3iss2pp230\"."
+
+msgid "plugins.pubIds.ark.manager.settings.arkSuffixPattern.issues"
+msgstr "for issues"
+
+msgid "plugins.pubIds.ark.manager.settings.arkSuffixPattern.submissions"
+msgstr "for articles"
+
+msgid "plugins.pubIds.ark.manager.settings.arkSuffixPattern.representations"
+msgstr "for galleys"
+
+msgid "plugins.pubIds.ark.manager.settings.arkIssueSuffixPatternRequired"
+msgstr "Please enter the ARK suffix pattern for issues."
+
+msgid "plugins.pubIds.ark.manager.settings.arkSubmissionSuffixPatternRequired"
+msgstr "Please enter the ARK suffix pattern for articles."
+
+msgid ""
+"plugins.pubIds.ark.manager.settings.arkRepresentationSuffixPatternRequired"
+msgstr "Please enter the ARK suffix pattern for galleys."
+
+msgid "plugins.pubIds.ark.manager.settings.arkSuffixDefault"
+msgstr "Use default patterns."
+
+msgid "plugins.pubIds.ark.manager.settings.arkSuffixDefault.description"
+msgstr ""
+"%j.v%vi%i for issues<br />%j.v%vi%i.%a for articles<br />%j.v%vi%i.%a.g%g "
+"for galleys."
+
+msgid "plugins.pubIds.ark.manager.settings.arkSuffixCustomIdentifier"
+msgstr ""
+"Enter an individual ARK suffix for each published item. You'll find an "
+"additional ARK input field on each item's metadata page."
+
+msgid "plugins.pubIds.ark.manager.settings.arkResolver"
+msgstr "Resolver URL"
+
+msgid "plugins.pubIds.ark.manager.settings.arkResolver.description"
+msgstr "(e.g. https://n2t.net/)"
+
+msgid "plugins.pubIds.ark.manager.settings.form.arkResolverRequired"
+msgstr "Please enter the resolver URL."
+
+msgid "plugins.pubIds.ark.manager.settings.arkReassign"
+msgstr "Reassign ARKs"
+
+msgid "plugins.pubIds.ark.manager.settings.arkReassign.description"
+msgstr ""
+"If you change your ARK configuration, ARKs that have already been assigned "
+"will not be affected. Once the ARK configuration is saved, use this button "
+"to clear all existing ARKs so that the new settings will take effect with "
+"existing objects."
+
+msgid "plugins.pubIds.ark.manager.settings.arkReassign.confirm"
+msgstr "Are you sure you wish to delete all existing ARKs?"
+
+#. metadata form
+msgid "plugins.pubIds.ark.editor.ark"
+msgstr "ARK"
+
+msgid "plugins.pubIds.ark.editor.arkObjectTypeIssue"
+msgstr "issue"
+
+msgid "plugins.pubIds.ark.editor.arkObjectTypeSubmission"
+msgstr "article"
+
+msgid "plugins.pubIds.ark.editor.arkObjectTypeRepresentation"
+msgstr "galley"
+
+msgid "plugins.pubIds.ark.editor.customSuffixMissing"
+msgstr "The ARK cannot be assigned because the custom suffix is missing."
+
+msgid "plugins.pubIds.ark.editor.patternNotResolved"
+msgstr "The ARK cannot be assigned because it contains an unresolved pattern."
+
+msgid "plugins.pubIds.ark.editor.canBeAssigned"
+msgstr ""
+"What you see is a preview of the ARK. Select the checkbox and save the form "
+"to assign the ARK."
+
+msgid "plugins.pubIds.ark.editor.assigned"
+msgstr "The ARK is assigned to this {$pubObjectType}."
+
+msgid "plugins.pubIds.ark.editor.arkSuffixCustomIdentifierNotUnique"
+msgstr ""
+"The given ARK suffix is already in use for another published item. Please "
+"enter a unique ARK suffix for each item."
+
+msgid "plugins.pubIds.ark.editor.clearObjectsARK"
+msgstr "Clear ARK"
+
+msgid "plugins.pubIds.ark.editor.clearObjectsARK.confirm"
+msgstr "Are you sure you wish to delete the existing ARK?"
+
+msgid "plugins.pubIds.ark.editor.clearIssueObjectsARK"
+msgstr "Clear Issue Objects ARKs"
+
+msgid "plugins.pubIds.ark.editor.clearIssueObjectsARK.confirm"
+msgstr "Are you sure you wish to delete the existing issue objects ARKs?"
+
+msgid "plugins.pubIds.ark.editor.clearIssueObjectsARK.description"
+msgstr ""
+"Use the following option to clear ARKs of all objects (articles and galleys) "
+"currently scheduled for this issue."
+
+#. assignment form
+msgid "plugins.pubIds.ark.editor.assignARK"
+msgstr "Assign the ARK {$pubId} to this {$pubObjectType}"
+
+msgid "plugins.pubIds.ark.editor.assignARK.emptySuffix"
+msgstr "The ARK cannot be assigned because the custom suffix is missing."
+
+msgid "plugins.pubIds.ark.editor.assignARK.pattern"
+msgstr ""
+"The ARK {$pubId} cannot be assigned because it contains an unresolved "
+"pattern."
+
+msgid "plugins.pubIds.ark.editor.assignARK.assigned"
+msgstr "The ARK {$pubId} has been assigned."
