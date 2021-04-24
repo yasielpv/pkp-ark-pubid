@@ -11,7 +11,7 @@
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @ingroup plugins_pubIds_ark
- * @brief Wrapper for urn plugin.
+ * @brief Wrapper for ark plugin.
  *
  */
 require_once('ARKPubIdPlugin.inc.php');
