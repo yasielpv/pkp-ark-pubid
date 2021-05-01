@@ -40,7 +40,7 @@ msgstr ""
 msgid "plugins.pubIds.ark.manager.settings.enableIssueARK"
 msgstr "Números"
 
-msgid "plugins.pubIds.ark.manager.settings.enableSubmissionARK"
+msgid "plugins.pubIds.ark.manager.settings.enablePublicationARK"
 msgstr "Artículos"
 
 msgid "plugins.pubIds.ark.manager.settings.enableRepresentationARK"
@@ -146,6 +146,12 @@ msgstr "galerada"
 msgid "plugins.pubIds.ark.editor.customSuffixMissing"
 msgstr "No se puede asignar un ARK porque falta el sufijo personalizado."
 
+msgid "plugins.pubIds.ark.editor.missingPrefix"
+msgstr "El ARK debe empezar con {$arkPrefix}."
+
+msgid "plugins.pubIds.ark.editor.ark.description"
+msgstr "El ARK debe empezar con {$prefix}."
+
 msgid "plugins.pubIds.ark.editor.patternNotResolved"
 msgstr "No se puede asignar un ARK porque contiene patrones sin resolver."
 
@@ -156,6 +162,18 @@ msgstr ""
 
 msgid "plugins.pubIds.ark.editor.assigned"
 msgstr "El ARK asignado a este {$pubObjectType}."
+
+msgid "plugins.pubIds.ark.editor.preview.objects"
+msgstr "Ítem"
+
+msgid "plugins.pubIds.ark.editor.preview.galleys"
+msgstr "Galerada: {$galleyLabel}"
+
+msgid "plugins.pubIds.ark.editor.preview.publication.none"
+msgstr "No se ha asignado ningún ARK a esta publicación."
+
+msgid "plugins.pubIds.ark.editor.preview.publication"
+msgstr "El ARK de esta publicación será {$ark}."
 
 msgid "plugins.pubIds.ark.editor.arkSuffixCustomIdentifierNotUnique"
 msgstr ""
@@ -180,6 +198,17 @@ msgstr ""
 "Use la siguiente opción para limpiar los ARKs de todos los objetos "
 "(artículos y galerias) actualmente programados para este número."
 
+msgid "plugins.pubIds.ark.editor.missingParts"
+msgstr ""
+"No puede generar un ARK porque una o más partes del patrón ARK no se "
+"encuentran. Sería necesario asignar la publicación a un número, establecer "
+"un identificador editorial o añadir los números de página."
+
+msgid "plugins.pubIds.ark.editor.missingIssue"
+msgstr ""
+"No puede generar un ARK hasta que esta publicación haya sido asignada a un "
+"número."
+
 #. assignment form
 msgid "plugins.pubIds.ark.editor.assignARK"
 msgstr "Asignar el ARK {$pubId} a este {$pubObjectType}"
@@ -193,3 +222,9 @@ msgstr ""
 
 msgid "plugins.pubIds.ark.editor.assignARK.assigned"
 msgstr "Se ha asignado el ARK {$pubId}."
+
+msgid "plugins.pubIds.ark.editor.ark.assignArk"
+msgstr "Asignar"
+
+msgid "plugins.pubIds.ark.editor.ark.clearArk"
+msgstr "Limpiar"

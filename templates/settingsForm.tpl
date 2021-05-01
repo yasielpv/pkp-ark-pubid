@@ -24,7 +24,7 @@
 		<p class="pkp_help">{translate key="plugins.pubIds.ark.manager.settings.explainARKs"}</p>
 		{fbvFormSection list="true"}
 			{fbvElement type="checkbox" label="plugins.pubIds.ark.manager.settings.enableIssueARK" id="enableIssueARK" maxlength="40" checked=$enableIssueARK|compare:true}
-			{fbvElement type="checkbox" label="plugins.pubIds.ark.manager.settings.enableSubmissionARK" id="enableSubmissionARK" maxlength="40" checked=$enableSubmissionARK|compare:true}
+			{fbvElement type="checkbox" label="plugins.pubIds.ark.manager.settings.enablePublicationARK" id="enablePublicationARK" maxlength="40" checked=$enablePublicationARK|compare:true}
 			{fbvElement type="checkbox" label="plugins.pubIds.ark.manager.settings.enableRepresentationARK" id="enableRepresentationARK" maxlength="40" checked=$enableRepresentationARK|compare:true}
 		{/fbvFormSection}
 	{/fbvFormArea}

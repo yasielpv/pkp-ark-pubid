@@ -42,7 +42,7 @@ msgstr ""
 msgid "plugins.pubIds.ark.manager.settings.enableIssueARK"
 msgstr "Issues"
 
-msgid "plugins.pubIds.ark.manager.settings.enableSubmissionARK"
+msgid "plugins.pubIds.ark.manager.settings.enablePublicationARK"
 msgstr "Articles"
 
 msgid "plugins.pubIds.ark.manager.settings.enableRepresentationARK"
@@ -58,6 +58,24 @@ msgstr ""
 
 msgid "plugins.pubIds.ark.manager.settings.form.arkPrefixPattern"
 msgstr "The ARK prefix pattern must be in the form \"ark:/\"&lt;NAAN&gt;."
+
+msgid "plugins.pubIds.ark.editor.missingPrefix"
+msgstr "The ARK must begin with {$arkPrefix}."
+
+msgid "plugins.pubIds.ark.editor.ark.description"
+msgstr "The ARK must begin with {$prefix}."
+
+msgid "plugins.pubIds.ark.editor.missingIssue"
+msgstr "You can not generate a ARK until this publication has been assigned to an issue."
+
+msgid "plugins.pubIds.ark.editor.missingParts"
+msgstr "You can not generate a ARK because one or more parts of the ARK pattern are missing data. You may need to assign the publication to an issue, set a publisher ID or enter page numbers."
+
+msgid "plugins.pubIds.ark.editor.preview.publication"
+msgstr "The ARK for this publication will be {$ark}."
+
+msgid "plugins.pubIds.ark.editor.preview.publication.none"
+msgstr "A ARK has not been assigned to this publication."
 
 msgid "plugins.pubIds.ark.manager.settings.arkSuffix"
 msgstr "ARK Suffix"
@@ -186,6 +204,12 @@ msgstr ""
 msgid "plugins.pubIds.ark.editor.assignARK"
 msgstr "Assign the ARK {$pubId} to this {$pubObjectType}"
 
+msgid "plugins.pubIds.ark.editor.preview.galleys"
+msgstr "Galley: {$galleyLabel}"
+
+msgid "plugins.pubIds.ark.editor.preview.objects"
+msgstr "Item"
+
 msgid "plugins.pubIds.ark.editor.assignARK.emptySuffix"
 msgstr "The ARK cannot be assigned because the custom suffix is missing."
 
@@ -196,3 +220,9 @@ msgstr ""
 
 msgid "plugins.pubIds.ark.editor.assignARK.assigned"
 msgstr "The ARK {$pubId} has been assigned."
+
+msgid "plugins.pubIds.ark.editor.ark.assignArk"
+msgstr "Assign"
+
+msgid "plugins.pubIds.ark.editor.ark.clearArk"
+msgstr "Clear"

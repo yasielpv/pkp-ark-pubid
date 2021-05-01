@@ -52,9 +52,9 @@
 {/if}
 {* issue pub object *}
 {if $pubObjectType == 'Issue'}
-	{assign var=enableSubmissionARK value=$pubIdPlugin->getSetting($currentContext->getId(), "enableSubmissionARK")}
+	{assign var=enablePublicationARK value=$pubIdPlugin->getSetting($currentContext->getId(), "enablePublicationARK")}
 	{assign var=enableRepresentationARK value=$pubIdPlugin->getSetting($currentContext->getId(), "enableRepresentationARK")}
-	{if $enableSubmissionARK || $enableRepresentationARK}
+	{if $enablePublicationARK || $enableRepresentationARK}
 		{if !$formArea}
 			{assign var="formAreaTitle" value="plugins.pubIds.ark.editor.ark"}
 		{else}
