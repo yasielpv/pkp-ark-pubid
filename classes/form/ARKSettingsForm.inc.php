@@ -65,8 +65,8 @@ class ARKSettingsForm extends Form {
 			if ($form->getData('arkSuffix') == 'pattern' && $form->getData('enableIssueARK')) return $arkIssueSuffixPattern != '';
 			return true;
 		}));
-		$this->addCheck(new FormValidatorCustom($this, 'arkSubmissionSuffixPattern', 'required', 'plugins.pubIds.ark.manager.settings.arkSubmissionSuffixPatternRequired', function($arkSubmissionSuffixPattern) use ($form) {
-			if ($form->getData('arkSuffix') == 'pattern' && $form->getData('enablePublicationARK')) return $arkSubmissionSuffixPattern != '';
+		$this->addCheck(new FormValidatorCustom($this, 'arkPublicationSuffixPattern', 'required', 'plugins.pubIds.ark.manager.settings.arkSubmissionSuffixPatternRequired', function($arkPublicationSuffixPattern) use ($form) {
+			if ($form->getData('arkSuffix') == 'pattern' && $form->getData('enablePublicationARK')) return $arkPublicationSuffixPattern != '';
 			return true;
 		}));
 		$this->addCheck(new FormValidatorCustom($this, 'arkRepresentationSuffixPattern', 'required', 'plugins.pubIds.ark.manager.settings.arkRepresentationSuffixPatternRequired', function($arkRepresentationSuffixPattern) use ($form) {
@@ -141,7 +141,7 @@ class ARKSettingsForm extends Form {
 			'arkPrefix' => 'string',
 			'arkSuffix' => 'string',
 			'arkIssueSuffixPattern' => 'string',
-			'arkSubmissionSuffixPattern' => 'string',
+			'arkPublicationSuffixPattern' => 'string',
 			'arkRepresentationSuffixPattern' => 'string',
 			'arkResolver' => 'string',
 		);

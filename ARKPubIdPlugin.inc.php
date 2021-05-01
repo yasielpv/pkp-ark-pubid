@@ -210,7 +210,7 @@ class ARKPubIdPlugin extends PubIdPlugin {
 	public function getSuffixPatternsFieldNames() {
 		return  array(
 			'Issue' => 'arkIssueSuffixPattern',
-			'Submission' => 'arkSubmissionSuffixPattern',
+			'Submission' => 'arkPublicationSuffixPattern',
 			'Representation' => 'arkRepresentationSuffixPattern',
 		);
 	}
@@ -348,7 +348,7 @@ class ARKPubIdPlugin extends PubIdPlugin {
         if ($suffixType === 'default') {
             $pattern = '%j.v%vi%i.%a';
         } elseif ($suffixType === 'pattern') {
-            $pattern = $this->getSetting($form->submissionContext->getId(), 'arkSubmissionSuffixPattern');
+            $pattern = $this->getSetting($form->submissionContext->getId(), 'arkPublicationSuffixPattern');
         }
 
         // If a pattern exists, use a DOI-like field to generate the ARK

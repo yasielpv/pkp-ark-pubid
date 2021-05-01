@@ -52,7 +52,7 @@
 			{fbvElement type="radio" id="arkSuffixPattern" name="arkSuffix" value="pattern" label="plugins.pubIds.ark.manager.settings.arkSuffixPattern" checked=$arkSuffix|compare:"pattern"}
 			<p class="pkp_help">{translate key="plugins.pubIds.ark.manager.settings.arkSuffixPattern.example"}</p>
 			{fbvElement type="text" label="plugins.pubIds.ark.manager.settings.arkSuffixPattern.issues" id="arkIssueSuffixPattern" value=$arkIssueSuffixPattern maxlength="40" inline=true size=$fbvStyles.size.MEDIUM}
-			{fbvElement type="text" label="plugins.pubIds.ark.manager.settings.arkSuffixPattern.submissions" id="arkSubmissionSuffixPattern" value=$arkSubmissionSuffixPattern maxlength="40" inline=true size=$fbvStyles.size.MEDIUM}
+			{fbvElement type="text" label="plugins.pubIds.ark.manager.settings.arkSuffixPattern.submissions" id="arkPublicationSuffixPattern" value=$arkPublicationSuffixPattern maxlength="40" inline=true size=$fbvStyles.size.MEDIUM}
 			{fbvElement type="text" label="plugins.pubIds.ark.manager.settings.arkSuffixPattern.representations" id="arkRepresentationSuffixPattern" value=$arkRepresentationSuffixPattern maxlength="40" inline=true size=$fbvStyles.size.MEDIUM}
 		{/fbvFormSection}
 	{/fbvFormArea}
