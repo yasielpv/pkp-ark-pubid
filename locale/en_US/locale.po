@@ -210,6 +210,9 @@ msgstr "Galley: {$galleyLabel}"
 msgid "plugins.pubIds.ark.editor.preview.objects"
 msgstr "Item"
 
+msgid "plugins.pubIds.ark.editor.preview.publication"
+msgstr "Article"
+
 msgid "plugins.pubIds.ark.editor.assignARK.emptySuffix"
 msgstr "The ARK cannot be assigned because the custom suffix is missing."
 

@@ -440,9 +440,9 @@ class ARKPubIdPlugin extends PubIdPlugin {
             $arkTableRows = [];
             if ($publicationArkEnabled) {
                 if ($form->publication->getData('pub-id::ark')) {
-                    $arkTableRows[] = [$form->publication->getData('pub-id::ark'), 'Publication'];
+                    $arkTableRows[] = [$form->publication->getData('pub-id::ark'), __('plugins.pubIds.ark.editor.preview.publication')];
                 } else {
-                    $arkTableRows[] = [$warningIconHtml . __('submission.status.unassigned'), 'Publication'];
+                    $arkTableRows[] = [$warningIconHtml . __('submission.status.unassigned'), __('plugins.pubIds.ark.editor.preview.publication')];
                 }
             }
             if ($galleyArkEnabled) {

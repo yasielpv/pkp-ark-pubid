@@ -166,6 +166,9 @@ msgstr "El ARK asignado a este {$pubObjectType}."
 msgid "plugins.pubIds.ark.editor.preview.objects"
 msgstr "Ítem"
 
+msgid "plugins.pubIds.ark.editor.preview.publication"
+msgstr "Artículo"
+
 msgid "plugins.pubIds.ark.editor.preview.galleys"
 msgstr "Galerada: {$galleyLabel}"
 
