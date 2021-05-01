@@ -360,8 +360,9 @@ class ARKPubIdPlugin extends PubIdPlugin {
                 'pattern' => $pattern,
                 'contextInitials' => $form->submissionContext->getData('acronym', $form->submissionContext->getData('primaryLocale')) ?? '',
                 'submissionId' => $form->publication->getData('submissionId'),
-                'assignId' => __('plugins.pubIds.ark.editor.assignARK'),
-                'clearId' => __('plugins.pubIds.ark.editor.clearObjectsARK'),
+                'assignIdLabel' => __('plugins.pubIds.ark.editor.ark.assignArk'),
+                'clearIdLabel' => __('plugins.pubIds.ark.editor.ark.clearArk'),
+				'separator' => '/',
             ];
             if ($form->publication->getData('pub-id::publisher-id')) {
                 $fieldData['publisherId'] = $form->publication->getData('pub-id::publisher-id');
@@ -383,9 +384,7 @@ class ARKPubIdPlugin extends PubIdPlugin {
             } else {
                 $fieldData['missingPartsLabel'] = __('plugins.pubIds.ark.editor.missingParts');
             }
-			$fieldData['separator'] = '/';
-			$fieldData['assignIdLabel'] = __('plugins.pubIds.ark.editor.ark.assignArk');
-			$fieldData['clearIdLabel'] = __('plugins.pubIds.ark.editor.ark.clearArk');
+
             $form->addField(new \PKP\components\forms\FieldPubId('pub-id::ark', $fieldData));
 
         // Otherwise add a field for manual entry that includes a button to generate
