@@ -12,8 +12,8 @@
 <version>
 	<application>ark</application>
 	<type>plugins.pubIds</type>
-	<release>1.0.1.0</release>
-	<date>2021-05-03</date>
+	<release>1.0.2.0</release>
+	<date>2021-10-12</date>
 	<lazy-load>1</lazy-load>
 	<class>ARKPubIdPlugin</class>
 </version>
