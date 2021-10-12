@@ -12,7 +12,7 @@
 <version>
 	<application>ark</application>
 	<type>plugins.pubIds</type>
-	<release>1.0.3.0</release>
+	<release>1.0.3.1</release>
 	<date>2021-10-12</date>
 	<lazy-load>1</lazy-load>
 	<class>ARKPubIdPlugin</class>
