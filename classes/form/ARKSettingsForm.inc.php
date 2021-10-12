@@ -60,7 +60,7 @@ class ARKSettingsForm extends Form {
 		$this->addCheck(new FormValidatorCustom($this, 'arkObjects', 'required', 'plugins.pubIds.ark.manager.settings.arkObjectsRequired', function($enableIssueARK) use ($form) {
 			return $form->getData('enableIssueARK') || $form->getData('enableSubmissionARK') || $form->getData('enableRepresentationARK');
 		}));
-		$this->addCheck(new FormValidatorRegExp($this, 'arkPrefix', 'required', 'plugins.pubIds.ark.manager.settings.form.arkPrefixPattern', '/^ark:\/[0-9]+$/'));
+		$this->addCheck(new FormValidatorRegExp($this, 'arkPrefix', 'required', 'plugins.pubIds.ark.manager.settings.form.arkPrefixPattern', '/^ark:\/[0123456789bcdfghjkmnpqrstvwxz]{1,16}$/'));
 		$this->addCheck(new FormValidatorCustom($this, 'arkIssueSuffixPattern', 'required', 'plugins.pubIds.ark.manager.settings.arkIssueSuffixPatternRequired', function($arkIssueSuffixPattern) use ($form) {
 			if ($form->getData('arkSuffix') == 'pattern' && $form->getData('enableIssueARK')) return $arkIssueSuffixPattern != '';
 			return true;
